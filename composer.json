@@ -1,0 +1,31 @@
+{
+    "name": "gomotion/anti-spam",
+    "description": "A package that prevents spam.",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "authors": [
+        {
+            "name": "Andy",
+            "email" : "andy@gomotion.nl"
+        },
+        {
+            "name": "Patrick",
+            "email": "patrick@gomotion.nl"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4" : {
+            "Gomotion\\Antispam\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Gomotion\\Antispam\\AntispamServiceProvider"
+            ]
+        }
+    }
+}
